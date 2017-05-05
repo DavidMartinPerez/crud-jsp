@@ -1,1 +1,2 @@
-# CRUD_jsp
+# CRUD
+# Proyecto Tarjetas Gráficas
