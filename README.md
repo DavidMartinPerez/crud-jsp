@@ -9,7 +9,7 @@
     - Apache Tomcat 8.0
 
 ## Listado de graficas
-    ![Alt text](img_web/index.PNG?raw="true "Listado")
+    ![Alt text](img_web/index.PNG)
 
 ## Añadir una nueva grafica
 
