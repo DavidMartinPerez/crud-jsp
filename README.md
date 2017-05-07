@@ -9,7 +9,7 @@
     - Apache Tomcat 8.0
 
 ## Listado de graficas
-    ![Alt text](https://github.com/DavidMartinPerez/CRUD_jsp/blob/master/img_web/index.png)
+    ![Alt text](https://github.com/DavidMartinPerez/CRUD_jsp/blob/master/img_web/index.PNG)
 
 ## Añadir una nueva grafica
 
