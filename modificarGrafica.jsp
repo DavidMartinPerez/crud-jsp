@@ -10,10 +10,18 @@
     </head>
     <body>
         <% request.setCharacterEncoding("UTF-8"); %>
+        
+        <div style="height:100px;"></div>
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-2 col-md-offset-2">
+                <a href="index.jsp" class="btn btn-success">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    Atrás
+                </a>
+            </div>
+            <div class="col-md-7 col-md-offset-2">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">Nueva grafica</div>
+                    <div class="panel-heading">Modificar <%= request.getParameter("marca") %> <%= request.getParameter("modelo") %></div>
                     <div class="panel-body">
                         <form method="get" action="grabaModificadaGrafica.jsp">
                             <div class="row">

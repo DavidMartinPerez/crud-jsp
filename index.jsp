@@ -21,35 +21,19 @@
             <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#/">GRÁFICAS</a>
+                    <a class="navbar-brand" href="index.jsp">GRÁFICAS</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Añadir nueva</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Modificar</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Eliminar</a></li>
-                    </ul>
-                    <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Perfil</a></li>
+                        <li><a href="nuevaGrafica.jsp">Añadir nueva</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
 		<!-- /navbar -->
 		<!-- container -->
-		<div class="container-fluid">
+		<div class="container">
 			<div class="page-header">
 	 			 <h1>Tarjetas graficas <small>Base de datos</small></h1>
 			</div>
@@ -63,7 +47,7 @@
 				<!-- Default panel contents -->
 				<div class="panel-heading">Lista de gráficas</div>
 				<!-- Table -->
-				<table class="table table-striped">
+				<table class="table table-striped table-responsive">
 					<tr class="panel-primary">
                                                 <th>
                                                     Codigo grafica
@@ -97,22 +81,28 @@
                                                     out.println("<td>" + listado.getString("tamaño") + " Gb</td>");
                                                     out.println("<td>" + listado.getString("precio") + " €</td><td>");
                                              %>
-                                                <form method="get" action="modificarGrafica.jsp">
-                                                    <input type="hidden" name="ID" value="<%=listado.getString("ID") %>">
-                                                    <input type="hidden" name="marca" value="<%=listado.getString("marca") %>">
-                                                    <input type="hidden" name="modelo" value="<%=listado.getString("modelo") %>">
-                                                    <input type="hidden" name="tamaño" value="<%=listado.getString("tamaño") %>">
-                                                    <input type="hidden" name="precio" value="<%=listado.getString("precio") %>">
-                                                    <button type="submit"  class="btn btn-info">
-                                                        <span class="glyphicon glyphicon-pencil"></span>
-                                                    </button>
-                                                </form>
-                                                <form method="get" action="borrarGrafica.jsp">
-                                                    <input type="hidden" name="ID" value="<%=listado.getString("ID") %>"/>
-                                                    <button type="submit" class="btn btn-danger">
-                                                        <span class="glyphicon glyphicon-trash"></span>
-                                                    </button>
-                                                </form>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <form method="get" action="modificarGrafica.jsp">
+                                                        <input type="hidden" name="ID" value="<%=listado.getString("ID") %>">
+                                                        <input type="hidden" name="marca" value="<%=listado.getString("marca") %>">
+                                                        <input type="hidden" name="modelo" value="<%=listado.getString("modelo") %>">
+                                                        <input type="hidden" name="tamaño" value="<%=listado.getString("tamaño") %>">
+                                                        <input type="hidden" name="precio" value="<%=listado.getString("precio") %>">
+                                                        <button type="submit"  class="btn btn-info">
+                                                            <span class="glyphicon glyphicon-pencil"></span>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <form method="get" action="borrarGrafica.jsp">
+                                                        <input type="hidden" name="ID" value="<%=listado.getString("ID") %>"/>
+                                                        <button type="submit" class="btn btn-danger">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
                                             </td></tr>
                                              <%
                                                 }
@@ -124,16 +114,20 @@
 		<div style="height:50px"></div>
 		<div class="well">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-4">
+				<div class="col-xs-6 off-set-2 col-md-8 col-md-offset-4">
 					<img src="img/unnamed.png"></img>
 				</div>
-				<div class="col-md-offset-10">
-					<p>@thor: <strong>David Martín Pérez</p>
-				</div>
-				<div class="col-md-offset-10">
-					<img src="img/github-icon.svg" height="16" width="16"></img>
-					<a href="https://github.com/DavidMartinPerez/CRUD_jsp">Github</a>
-				</div>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-offset-10">
+                                <p>@thor: <strong>David Martín Pérez</p>
+                            </div>
+                        
+                            <div class="col-md-offset-10">
+				<img src="img/github-icon.svg" height="16" width="16"></img>
+                                <a href="https://github.com/DavidMartinPerez/CRUD_jsp">Github</a>
+                            </div>
+                        </div>
 			</div>
 		</div>
 	</body>

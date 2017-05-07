@@ -9,6 +9,15 @@
         <title>wikiGrafica</title>
     </head>
     <body>
+        <div style="height: 50px;"></div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2">
+                <a href="index.jsp" class="btn btn-success">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    Atrás
+                </a>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-primary">
@@ -17,19 +26,19 @@
                         <form method="get" action="grabaGrafica.jsp">
                             <div class="row">
                                 <div class="col-md-6">
-                                    Código Grafica <input class="form-control" type="text" name="id"><br>
+                                    Código Grafica <input class="form-control" type="text" name="id" required/><br>
                                 </div>
                                 <div class="col-md-6">
-                                    Marca <input class="form-control" type="text" name="marca"/></br>
+                                    Marca <input class="form-control" type="text" name="marca"required/></br>
                                 </div>
                                 <div class="col-md-6">
-                                    Modelo <input class="form-control" type="text" name="modelo"/></br>
+                                    Modelo <input class="form-control" type="text" name="modelo"required/></br>
                                 </div>
-                                <div class="col-lg-6">
-                                    Tamaño <input class="form-control" type="text" name="tamaño"/></br>
+                                <div class="col-md-6">
+                                    Tamaño <input class="form-control" type="text" name="tamaño"required/></br>
                                 </div>
-                                <div class="col-lg-6">
-                                    Precio <input class="form-control" type="text" name="precio"/></br>
+                                <div class="col-md-6">
+                                    Precio <input class="form-control" type="text" name="precio"required/></br>
                                 </div>
                             </div>
                             <div class="row">
