@@ -13,7 +13,7 @@
 
 ## Añadir una nueva grafica
 
-    ![Alt text](https://github.com/DavidMartinPerez/CRUD_jsp/blob/master/img_web/aniadir_grafica.PNG)
+    ![Alt text](https://github.com/DavidMartinPerez/CRUD_jsp/blob/master/img_web/aniadir_grafica.png)
 ## Modificar una grafica
 
     ![Alt text](img_web/modificar_grafica.PNG?raw="true "modificar")
