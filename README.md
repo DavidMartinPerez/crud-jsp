@@ -13,7 +13,7 @@
 
 ## Añadir una nueva grafica
 
-    ![Una imagen cualquiera](https://github.com/DavidMartinPerez/CRUD_jsp/blob/master/img_web/aniadir_grafica.PNG "De 150 x 150 píxeles")
+    ![Menú del programa](https://github.com/Dadvanced/crud_v_array/blob/master/screenshots/menu.png)
 ## Modificar una grafica
 
     ![Alt text](img_web/modificar_grafica.PNG?raw="true "modificar")
